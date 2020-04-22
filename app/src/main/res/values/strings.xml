@@ -29,15 +29,15 @@
     <string name="telem_vel">Telemóvel:</string>
     <string name="localidade">Localidade:</string>
     <string name="sala">Sala:</string>
-    <string name="nome">Nome:</string>
-    <string name="data_de_nascimento">Data de nascimento:</string>
-    <string name="sexo">Sexo:</string>
-    <string name="telem_vel">Telemóvel:</string>
-    <string name="sala">Sala:</string>
-    <string name="localidade">Localidade:</string>
-    <string name="nome">Nome:</string>
-    <string name="data_de_nascimento">Data de nascimento:</string>
-    <string name="sexo">Sexo:</string>
-    <string name="telem_vel">Telemóvel:</string>
-    <string name="localidade">Localidade:</string>
+    <string name="nome1">Nome:</string>
+    <string name="data_de_nascimento1">Data de nascimento:</string>
+    <string name="sexo1">Sexo:</string>
+    <string name="telem_vel1">Telemóvel:</string>
+    <string name="sala1">Sala:</string>
+    <string name="localidade1">Localidade:</string>
+    <string name="nome2">Nome:</string>
+    <string name="data_de_nascimento2">Data de nascimento:</string>
+    <string name="sexo2">Sexo:</string>
+    <string name="telem_vel2">Telemóvel:</string>
+    <string name="localidade2">Localidade:</string>
 </resources>
