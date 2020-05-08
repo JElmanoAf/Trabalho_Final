@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:hint="@string/Professionais_Saude"
+        android:onClick="Professionais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:hint="@string/Paciente_Infetado"
+        android:onClick="Infetados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:hint="@string/Pacientes_N_Infetados"
+        android:onClick="NaoInfetados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
