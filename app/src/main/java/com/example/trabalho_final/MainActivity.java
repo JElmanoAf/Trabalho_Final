@@ -29,4 +29,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DadosNaoInfetados.class);
         startActivity(intent);
     }
+
 }
