@@ -2,17 +2,17 @@
 <resources>
     <string name="app_name">Trabalho_Final</string>
     <string name="Professionais_Saude">Health professionals</string>
-    <string name="Paciente_Infetado">Infected Patients</string>
+    <string name="Paciente_Infetado">Infected patients</string>
     <string name="Pacientes_N_Infetados">Uninfected patients</string>
     <string name="Data_Professional">Date of birth</string>
-    <string name="Telemovel_Professional">Mobile Phone</string>
+    <string name="Telemovel_Professional">Mobile phone</string>
     <string name="Localidade_Professional">Locality</string>
     <string name="Nome_Infetado">Name</string>
-    <string name="Telemovel_Infetado">Mobile Phone</string>
+    <string name="Telemovel_Infetado">Mobile phone</string>
     <string name="Localidade_Infetado">Locality</string>
     <string name="Nome_N_Infetado">Name</string>
     <string name="Data_N_Infetado">Date of birth</string>
-    <string name="Telemovel_N_Infetado">Mobile Phone</string>
+    <string name="Telemovel_N_Infetado">Mobile phone</string>
     <string name="Localidade_N_Infetado">Locality</string>
     <string name="Sala_N_Infetado">Room</string>
     <string name="Sala_Infetado">Room</string>
@@ -27,11 +27,21 @@
     <string name="nome_obrigatorioP">Fill in the name</string>
     <string name="datadenascimento_obrigatoriaP">Fill in date of birth</string>
     <string name="telemovel_obrigatorioP">Invalid phone. Fill mobile phone</string>
-    <string name="localidade_obrigatoriaP">Fill in location</string>
+    <string name="localidade_obrigatoriaP">Fill in locality</string>
     <string name="Masculino_Professional">Male</string>
     <string name="Feminino_Professional">Female</string>
     <string name="Masculino_Infetado">Male</string>
     <string name="Feminino_Infetado">Female</string>
     <string name="Masculino_N_Infetado">Male</string>
     <string name="Feminino_N_Infetado">Female</string>
+    <string name="Lista_Infetados">List of infected patients</string>
+    <string name="Cancelar_Infetado">Cancel</string>
+    <string name="Editar_Infetado">Edit</string>
+    <string name="Eliminar_Infetado">Eliminate</string>
+    <string name="item_NomeI">Name:</string>
+    <string name="item_DatadenascimentoI">Date of birth:</string>
+    <string name="item_TelemovelI">Mobile phone:</string>
+    <string name="item_LocalidadeI">Locality:</string>
+    <string name="item_SalaI">Room:</string>
+    <string name="item_GeneroI">Gender:</string>
 </resources>

@@ -22,36 +22,48 @@ public class InfetadosAdapter extends ArrayAdapter<Infetados> {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        final Infetados itemPosicao = this.lista.get(position);
+        final Infetados posicaoI = this.lista.get(position);
 
-        convertView = LayoutInflater.from(this.context).inflate(R.layout.activity_item_infetado, null);
+        convertView = LayoutInflater.from(this.context).inflate(R.layout.item_infetado, null);
         final View layout = convertView;
 
-        TextView textView4 = (TextView) convertView.findViewById(R.id.textView4);
-        textView4.setText(itemPosicao.getNome());
+        TextView itemNomeI = (TextView) convertView.findViewById(R.id.itemNomeI);
+        itemNomeI.setText(posicaoI.getNome());
 
-        TextView textView5 = (TextView) convertView.findViewById(R.id.textView5);
-        textView5.setText(itemPosicao.getDatadenascimento());
+        TextView itemDatadenascimentoI = (TextView) convertView.findViewById(R.id.itemDatadenascimentoI);
+        itemDatadenascimentoI.setText(posicaoI.getDatadenascimento());
 
-        Button Editar = (Button) convertView.findViewById(R.id.Editar);
-        Editar.setOnClickListener(new View.OnClickListener() {
+        TextView itemTelemovelI = (TextView) convertView.findViewById(R.id.itemTelemovelI);
+        itemTelemovelI.setText(posicaoI.getTelemovel());
+
+        TextView itemLocalidadeI = (TextView) convertView.findViewById(R.id.itemLocalidadeI);
+        itemLocalidadeI.setText(posicaoI.getLocalidade());
+
+        TextView itemSalaI = (TextView) convertView.findViewById(R.id.itemSalaI);
+        itemSalaI.setText(posicaoI.getSala());
+
+        TextView itemGeneroI = (TextView) convertView.findViewById(R.id.itemGeneroI);
+        itemGeneroI.setText(posicaoI.getGenero());
+
+        Button editarI = (Button) convertView.findViewById(R.id.editarI);
+        editarI.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(context, itemInfetado.class);
-                intent.putExtra("id", itemPosicao.getId());
-                intent.putExtra("nome", itemPosicao.getNome());
-                intent.putExtra("datadenascimento", itemPosicao.getDatadenascimento());
-                intent.putExtra("telemovel", itemPosicao.getTelemovel());
-                intent.putExtra("localidade", itemPosicao.getLocalidade());
-                intent.putExtra("sala", itemPosicao.getSala());
-                intent.putExtra("genero", itemPosicao.getGenero());
+                Intent intent = new Intent(context, DadosInfetados.class);
+                intent.putExtra("id", posicaoI.getId());
+                intent.putExtra("nome", posicaoI.getNome());
+                intent.putExtra("datadenascimento", posicaoI.getDatadenascimento());
+                intent.putExtra("telemovel", posicaoI.getTelemovel());
+                intent.putExtra("localidade", posicaoI.getLocalidade());
+                intent.putExtra("sala", posicaoI.getSala());
+                intent.putExtra("genero", posicaoI.getGenero());
                 context.startActivity(intent);
             }
         });
 
-        Button Eliminar = (Button) convertView.findViewById(R.id.Eliminar);
-        Eliminar.setOnClickListener(new View.OnClickListener() {
+        Button eliminarI = (Button) convertView.findViewById(R.id.eliminarI);
+        eliminarI.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                new BDInfetados(context).delete(itemPosicao);
+                new BDInfetados(context).delete(posicaoI);
                 layout.setVisibility(View.GONE);
             }
         });

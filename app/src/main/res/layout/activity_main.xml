@@ -27,7 +27,18 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
         android:hint="@string/Paciente_Infetado"
-        android:onClick="Infetados" />
+        android:onClick="novoUsuarioI" />
+
+    <Button
+        android:id="@+id/ListaInfetados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/Lista_Infetados"
+        android:onClick="abreListaI" />
 
     <Button
         android:id="@+id/NaoInfetados"
@@ -40,12 +51,4 @@
         android:hint="@string/Pacientes_N_Infetados"
         android:onClick="NaoInfetados" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp" />
 </LinearLayout>

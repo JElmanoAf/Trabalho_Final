@@ -1,18 +1,35 @@
 package com.example.trabalho_final;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DadosInfetados extends AppCompatActivity {
+
+    private Infetados infetado = new Infetados();
+    private EditText editarNomeI;
+    private EditText editarDatadenascimentoI;
+    private EditText editarTelemovelI;
+    private EditText editarLocalidadeI;
+    private EditText editarSalaI;
+    private EditText editarGeneroI;
+    private Button SubmeterI;
+    private Button CancelarI;
+    private boolean novoInfetado = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +52,41 @@ public class DadosInfetados extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+
+        this.editarNomeI= (EditText)findViewById(R.id.editarNomeI);
+        this.editarDatadenascimentoI = (EditText)findViewById(R.id.editarDatadenascimentoI);
+        this.editarTelemovelI = (EditText)findViewById(R.id.editarTelemovelI);
+        this.editarLocalidadeI = (EditText)findViewById(R.id.editarLocalidadeI);
+        this.editarSalaI = (EditText)findViewById(R.id.editarSalaI);
+        //Genero
+        this.SubmeterI = (Button)findViewById(R.id.SubmeterI);
+        this.CancelarI = (Button)findViewById(R.id.CancelarI);
+
+        Intent intent = getIntent();
+        if (intent != null){
+            Bundle bundle = intent.getExtras();
+            if(bundle != null){
+                this.infetado.setNome(bundle.getString("nome"));
+                this.infetado.setDatadenascimento(bundle.getString("datadenascimento"));
+                this.infetado.setTelemovel(bundle.getString("telemovel"));
+                this.infetado.setLocalidade(bundle.getString("localidade"));
+                this.infetado.setSala(bundle.getString("sala"));
+                this.infetado.setGenero(bundle.getString("genero"));
+                this.infetado.setId(bundle.getInt("id"));
+
+                this.editarNomeI.setText(this.infetado.getNome());
+                this.editarDatadenascimentoI.setText(this.infetado.getDatadenascimento());
+                this.editarTelemovelI.setText(this.infetado.getTelemovel());
+                this.editarLocalidadeI.setText(this.infetado.getLocalidade());
+                this.editarSalaI.setText(this.infetado.getSala());
+                //genero
+                this.novoInfetado = false;
+            }
+        }
     }
 
-    public void submeterI(View view) {
+    public void submeterI(View v){
+
         // Verificar se os dados estão corretos
         EditText editarNomeI = (EditText) findViewById(R.id.editarNomeI);
         String nome = editarNomeI.getText().toString();
@@ -83,5 +132,27 @@ public class DadosInfetados extends AppCompatActivity {
             editarSalaI.requestFocus();
             return;
         }
+
+        this.infetado.setNome(this.editarNomeI.getText().toString());
+        this.infetado.setDatadenascimento(this.editarDatadenascimentoI.getText().toString());
+        this.infetado.setTelemovel(this.editarTelemovelI.getText().toString());
+        this.infetado.setLocalidade(this.editarLocalidadeI.getText().toString());
+        this.infetado.setSala(this.editarSalaI.getText().toString());
+        //Genero
+        if (this.novoInfetado){
+            //Insert
+            new BDInfetados(this).insert(this.infetado);
+            Toast.makeText(this, "Usuario inserido com sucesso", Toast.LENGTH_LONG).show();
+        }else {
+            //Update
+            new BDInfetados(this).update(this.infetado);
+            Toast.makeText(this, "Usuario atualizado com sucesso", Toast.LENGTH_LONG).show();
+        }
+        finish();
     }
+
+    public void cancelarInfetado(View v){
+        finish();
+    }
+
 }

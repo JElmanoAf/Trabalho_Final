@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Trabalho_Final</string>
     <string name="Professionais_Saude">Professionais de saúde</string>
-    <string name="Paciente_Infetado">Pacientes Infetados</string>
+    <string name="Paciente_Infetado">Pacientes infetados</string>
     <string name="Pacientes_N_Infetados">Pacientes não infetados</string>
     <string name="Data_Professional">Data de nascimento</string>
     <string name="Localidade_Professional">Localidade</string>
@@ -33,4 +33,14 @@
     <string name="Feminino_Infetado">Feminino</string>
     <string name="Masculino_N_Infetado">Masculino</string>
     <string name="Feminino_N_Infetado">Feminino</string>
+    <string name="Lista_Infetados">Lista de pacientes infetados</string>
+    <string name="Cancelar_Infetado">Cancelar</string>
+    <string name="Editar_Infetado">Editar</string>
+    <string name="Eliminar_Infetado">Eliminar</string>
+    <string name="item_NomeI">Nome:</string>
+    <string name="item_DatadenascimentoI">Data de nascimento:</string>
+    <string name="item_TelemovelI">Telemóvel:</string>
+    <string name="item_LocalidadeI">Localidade:</string>
+    <string name="item_SalaI">Sala:</string>
+    <string name="item_GeneroI">Gênero:</string>
 </resources>

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".itemInfetado"></activity>
+        <activity android:name=".ListaInfetados"></activity>
         <activity android:name=".DadosNaoInfetados" />
         <activity android:name=".DadosInfetados" />
         <activity android:name=".DadosProfessionais" />

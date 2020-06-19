@@ -14,7 +14,7 @@ public class SQLiteCore extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase bd) {
-        bd.execSQL("CREATE TABLE (id integer primary key autoincrement, nome text, datadenascimento text, telemovel text, localidade text, sala text, genero text);");
+        bd.execSQL("CREATE TABLE infetado(id integer primary key autoincrement, nome text, datadenascimento text, telemovel text, localidade text, sala text, genero text)");
     }
 
     @Override

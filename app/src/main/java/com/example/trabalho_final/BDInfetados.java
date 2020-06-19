@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class BDInfetados {
     private SQLiteDatabase bd;
@@ -43,8 +42,8 @@ public class BDInfetados {
         this.bd.delete("infetado","id = ?", new String[]{"" + infetado.getId()});
     }
 
-    public List<Infetados> pesquisar(){
-        List<Infetados> lista = new ArrayList<>();
+    public ArrayList<Infetados> pesquisar(){
+        ArrayList<Infetados> lista = new ArrayList<>();
         String[] colunas = new String[]{"id", "nome", "datadenascimento", "telemovel", "localidade", "sala", "genero"};
         Cursor cursor = this.bd.query("infetado", colunas, null, null, null, null, "nome DESC");
 
