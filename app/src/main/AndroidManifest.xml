@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaInfetados"></activity>
-        <activity android:name=".DadosNaoInfetados" />
-        <activity android:name=".DadosInfetados" />
-        <activity android:name=".DadosProfessionais" />
+        <activity android:name=".InfetadosLista"></activity>
+        <activity android:name=".NaoInfetadosLista"></activity>
+        <activity android:name=".NaoInfetadosDados" />
+        <activity android:name=".InfetadosDados" />
+        <activity android:name=".ProfissionaisDados" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,22 +15,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Professionais(View view) {
-        Intent intent = new Intent(this, DadosProfessionais.class);
+        Intent intent = new Intent(this, ProfissionaisDados.class);
         startActivity(intent);
     }
 
     public void novoUsuarioI(View view) {
-        Intent intent = new Intent(this, DadosInfetados.class);
+        Intent intent = new Intent(this, InfetadosDados.class);
         startActivity(intent);
     }
 
     public void NaoInfetados(View view) {
-        Intent intent = new Intent(this, DadosNaoInfetados.class);
+        Intent intent = new Intent(this, NaoInfetadosDados.class);
         startActivity(intent);
     }
 
     public void abreListaI(View view) {
-        Intent intent = new Intent(this, ListaInfetados.class);
+        Intent intent = new Intent(this, InfetadosLista.class);
+        startActivity(intent);
+    }
+
+    public void abreListaNI(View view) {
+        Intent intent = new Intent(this, NaoInfetadosLista.class);
         startActivity(intent);
     }
 

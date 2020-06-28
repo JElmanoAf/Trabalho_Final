@@ -15,12 +15,16 @@ public class SQLiteCore extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase bd) {
         bd.execSQL("CREATE TABLE infetado(id integer primary key autoincrement, nome text, datadenascimento text, telemovel text, localidade text, sala text, genero text)");
+        bd.execSQL("CREATE TABLE naoinfetado(id integer primary key autoincrement, nome text, datadenascimento text, telemovel text, localidade text, sala text, genero text)");
+        bd.execSQL("CREATE TABLE profissional(id integer primary key autoincrement, nome text, datadenascimento text, telemovel text, localidade text, genero text)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase bd, int oldVersion, int newVersion) {
         if ((oldVersion == 1) && (newVersion == 2)){
-            bd.execSQL("ALTER TABLE infetados ADD COLUMN teste TEXT;");
+            bd.execSQL("ALTER TABLE infetado ADD COLUMN teste TEXT;");
+            bd.execSQL("ALTER TABLE naoinfetado ADD COLUMN teste TEXT;");
+            bd.execSQL("ALTER TABLE profissional ADD COLUMN teste TEXT;");
         }
     }
 }

@@ -48,7 +48,7 @@ public class InfetadosAdapter extends ArrayAdapter<Infetados> {
         Button editarI = (Button) convertView.findViewById(R.id.editarI);
         editarI.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(context, DadosInfetados.class);
+                Intent intent = new Intent(context, InfetadosDados.class);
                 intent.putExtra("id", posicaoI.getId());
                 intent.putExtra("nome", posicaoI.getNome());
                 intent.putExtra("datadenascimento", posicaoI.getDatadenascimento());
@@ -63,13 +63,11 @@ public class InfetadosAdapter extends ArrayAdapter<Infetados> {
         Button eliminarI = (Button) convertView.findViewById(R.id.eliminarI);
         eliminarI.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                new BDInfetados(context).delete(posicaoI);
+                new InfetadosBD(context).delete(posicaoI);
                 layout.setVisibility(View.GONE);
             }
         });
 
         return convertView;
     }
-
-
 }

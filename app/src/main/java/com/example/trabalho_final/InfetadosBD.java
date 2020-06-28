@@ -7,10 +7,10 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 
-public class BDInfetados {
+public class InfetadosBD {
     private SQLiteDatabase bd;
 
-    public BDInfetados(Context context){
+    public InfetadosBD(Context context){
         this.bd = new SQLiteCore(context).getWritableDatabase();
     }
 

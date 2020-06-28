@@ -1,12 +1,9 @@
 package com.example.trabalho_final;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,7 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DadosInfetados extends AppCompatActivity {
+public class InfetadosDados extends AppCompatActivity {
 
     private Infetados infetado = new Infetados();
     private EditText editarNomeI;
@@ -34,7 +31,7 @@ public class DadosInfetados extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dados_infetados);
+        setContentView(R.layout.dados_infetados);
 
         Spinner dropdownGenero;
         dropdownGenero = (Spinner) findViewById(R.id.spinnerI);
@@ -141,11 +138,11 @@ public class DadosInfetados extends AppCompatActivity {
         //Genero
         if (this.novoInfetado){
             //Insert
-            new BDInfetados(this).insert(this.infetado);
+            new InfetadosBD(this).insert(this.infetado);
             Toast.makeText(this, "Usuario inserido com sucesso", Toast.LENGTH_LONG).show();
         }else {
             //Update
-            new BDInfetados(this).update(this.infetado);
+            new InfetadosBD(this).update(this.infetado);
             Toast.makeText(this, "Usuario atualizado com sucesso", Toast.LENGTH_LONG).show();
         }
         finish();

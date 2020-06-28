@@ -6,21 +6,20 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class ListaInfetados extends AppCompatActivity {
+public class InfetadosLista extends AppCompatActivity {
 
-    private ListView listView;
+    private ListView listView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_infetados);
+        setContentView(R.layout.lista_infetados);
 
-        this.listView = (ListView)findViewById(R.id.listview);
+        this.listView1 = (ListView)findViewById(R.id.listview1);
 
-        ArrayList<Infetados> lista = new BDInfetados(this).pesquisar();
+        ArrayList<Infetados> lista = new InfetadosBD(this).pesquisar();
         InfetadosAdapter infetadosAdapter = new InfetadosAdapter(this, lista);
-        this.listView.setAdapter(infetadosAdapter);
+        this.listView1.setAdapter(infetadosAdapter);
     }
 }

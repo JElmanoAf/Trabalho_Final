@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DadosNaoInfetados" >
+    tools:context=".InfetadosDados" >
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -14,11 +14,11 @@
         android:paddingTop="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editarNomeNI"
+            android:id="@+id/editarNomeI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:hint="@string/Nome_N_Infetado"
+            android:hint="@string/Nome_Infetado"
             android:inputType="textPersonName" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -27,11 +27,11 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editarDatadenascimentoNI"
+                android:id="@+id/editarDatadenascimentoI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="@string/Data_N_Infetado"
+                android:hint="@string/Data_Infetado"
                 android:inputType="date" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -40,11 +40,11 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editarTelemovelNI"
+                    android:id="@+id/editarTelemovelI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:hint="@string/Telemovel_N_Infetado"
+                    android:hint="@string/Telemovel_Infetado"
                     android:inputType="phone" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -53,11 +53,11 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/editarLocalidadeNI"
+                        android:id="@+id/editarLocalidadeI"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:hint="@string/Localidade_N_Infetado"
+                        android:hint="@string/Localidade_Infetado"
                         android:inputType="text" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -66,38 +66,53 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editarSalaNI"
+                            android:id="@+id/editarSalaI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp"
-                            android:hint="@string/Sala_N_Infetado"
+                            android:hint="@string/Sala_Infetado"
                             android:inputType="number" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/textView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp"
-                            android:text="@string/g_nero1" />
+                            android:text="@string/g_nero2" />
 
                         <Spinner
-                            android:id="@+id/spinnerNI"
+                            android:id="@+id/spinnerI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp" />
 
                         <Button
-                            android:id="@+id/SubmeterNI"
+                            android:id="@+id/SubmeterI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:onClick="submeterNI"
-                            android:text="@string/Submeter_N_Infetado" />
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="8dp"
+                            android:onClick="submeterI"
+                            android:text="@string/Submeter_Infetado" />
+                            android:onClick="submeterInfetado"
+
+                        <Button
+                            android:id="@+id/CancelarI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="8dp"
+                            android:onClick="cancelarInfetado"
+                            android:text="@string/Cancelar_Infetado" />
+                            android:onClick="cancelarInfetado"
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </com.google.android.material.textfield.TextInputLayout>
             </com.google.android.material.textfield.TextInputLayout>
+
         </com.google.android.material.textfield.TextInputLayout>
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>
