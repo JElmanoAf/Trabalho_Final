@@ -7,6 +7,7 @@ public class NaoInfetados {
     private String telemovelNI;
     private String localidadeNI;
     private String salaNI;
+    private String generoNI;
 
     public int getIdNI() {
         return idNI;
@@ -63,6 +64,4 @@ public class NaoInfetados {
     public void setGeneroNI(String generoNI) {
         this.generoNI = generoNI;
     }
-
-    private String generoNI;
 }

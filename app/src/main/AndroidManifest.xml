@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".InfetadosLista"></activity>
         <activity android:name=".NaoInfetadosLista"></activity>
+        <activity android:name=".ProfissionaisLista"></activity>
         <activity android:name=".NaoInfetadosDados" />
         <activity android:name=".InfetadosDados" />
         <activity android:name=".ProfissionaisDados" />
