@@ -122,10 +122,10 @@ public class InfetadosDados extends AppCompatActivity {
         }
 
         EditText editarSalaI = (EditText) findViewById(R.id.editarSalaI);
-        String sala = editarLocalidadeI.getText().toString();
+        String sala = editarSalaI.getText().toString();
 
         if (sala.length() == 0) {
-            editarSalaI.setError(getString(R.string.localidade_obrigatoriaP));
+            editarSalaI.setError(getString(R.string.quarto_obrigatorio));
             editarSalaI.requestFocus();
             return;
         }

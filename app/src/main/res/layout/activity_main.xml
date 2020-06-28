@@ -14,8 +14,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginRight="8dp"
-        android:hint="@string/Professionais_Saude"
-        android:onClick="Professionais" />
+        android:onClick="Professionais"
+        android:text="@string/Professionais_Saude" />
 
     <Button
         android:id="@+id/ListaProfissionais"
@@ -24,7 +24,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="abreListaP" />
+        android:onClick="abreListaP"
+        android:text="@string/Lista_Profissionais" />
 
     <Button
         android:id="@+id/Infetados"
@@ -33,8 +34,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:hint="@string/Paciente_Infetado"
-        android:onClick="novoUsuarioI" />
+        android:onClick="novoUsuarioI"
+        android:text="@string/Paciente_Infetado" />
 
     <Button
         android:id="@+id/ListaInfetados"
@@ -43,8 +44,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:hint="@string/Lista_Infetados"
-        android:onClick="abreListaI" />
+        android:onClick="abreListaI"
+        android:text="@string/Lista_Infetados" />
 
     <Button
         android:id="@+id/NaoInfetados"
@@ -53,8 +54,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:hint="@string/Pacientes_N_Infetados"
-        android:onClick="NaoInfetados" />
+        android:onClick="NaoInfetados"
+        android:text="@string/Pacientes_N_Infetados" />
 
     <Button
         android:id="@+id/ListaNaoInfetados"
@@ -63,6 +64,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="abreListaNI" />
+        android:onClick="abreListaNI"
+        android:text="@string/Lista_NaoInfetado" />
 
 </LinearLayout>

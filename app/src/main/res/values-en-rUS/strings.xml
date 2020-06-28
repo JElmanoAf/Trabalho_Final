@@ -44,4 +44,7 @@
     <string name="item_LocalidadeI">Locality:</string>
     <string name="item_SalaI">Room:</string>
     <string name="item_GeneroI">Gender:</string>
+    <string name="Lista_NaoInfetado">List of uninfected patients</string>
+    <string name="Lista_Profissionais">List of health professionals</string>
+    <string name="quarto_obrigatorio">Fill in room</string>
 </resources>

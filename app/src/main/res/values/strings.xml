@@ -12,8 +12,6 @@
     <string name="Data_N_Infetado">Data de nascimento</string>
     <string name="Telemovel_N_Infetado">Telemóvel</string>
     <string name="Localidade_N_Infetado">Localidade</string>
-    <string name="Sala_N_Infetado">Sala</string>
-    <string name="Sala_Infetado">Sala</string>
     <string name="Submeter_Professional">Submeter</string>
     <string name="Submeter_Infetado">Submeter</string>
     <string name="Submeter_N_Infetado">Submeter</string>
@@ -41,6 +39,11 @@
     <string name="item_DatadenascimentoI">Data de nascimento:</string>
     <string name="item_TelemovelI">Telemóvel:</string>
     <string name="item_LocalidadeI">Localidade:</string>
-    <string name="item_SalaI">Sala:</string>
     <string name="item_GeneroI">Gênero:</string>
+    <string name="Lista_NaoInfetado">Lista de pacientes não infetados</string>
+    <string name="Lista_Profissionais">Lista de profissionais de saúde</string>
+    <string name="Sala_Infetado">Quarto</string>
+    <string name="Sala_N_Infetado">Quarto</string>
+    <string name="item_SalaI">Quarto:</string>
+    <string name="quarto_obrigatorio">Preencha quarto</string>
 </resources>

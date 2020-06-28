@@ -121,10 +121,10 @@ public class NaoInfetadosDados extends AppCompatActivity {
         }
 
         EditText editarSalaNI = (EditText) findViewById(R.id.editarSalaNI);
-        String sala = editarLocalidadeNI.getText().toString();
+        String sala = editarSalaNI.getText().toString();
 
         if (sala.length() == 0) {
-            editarSalaNI.setError(getString(R.string.localidade_obrigatoriaP));
+            editarSalaNI.setError(getString(R.string.quarto_obrigatorio));
             editarSalaNI.requestFocus();
             return;
         }

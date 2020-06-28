@@ -91,7 +91,7 @@
                         android:layout_marginTop="16dp"
                         android:layout_marginRight="8dp"
                         android:onClick="cancelarProfissional"
-                        android:text="Button" />
+                        android:text="@string/Cancelar_Infetado" />
                 </com.google.android.material.textfield.TextInputLayout>
             </com.google.android.material.textfield.TextInputLayout>
         </com.google.android.material.textfield.TextInputLayout>

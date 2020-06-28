@@ -17,7 +17,8 @@
             android:id="@+id/editarNomeNI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:hint="@string/Nome_N_Infetado"
             android:inputType="textPersonName" />
 
@@ -30,7 +31,8 @@
                 android:id="@+id/editarDatadenascimentoNI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:hint="@string/Data_N_Infetado"
                 android:inputType="date" />
 
@@ -43,7 +45,8 @@
                     android:id="@+id/editarTelemovelNI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:hint="@string/Telemovel_N_Infetado"
                     android:inputType="phone" />
 
@@ -56,7 +59,8 @@
                         android:id="@+id/editarLocalidadeNI"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
                         android:hint="@string/Localidade_N_Infetado"
                         android:inputType="text" />
 
@@ -69,7 +73,8 @@
                             android:id="@+id/editarSalaNI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
                             android:hint="@string/Sala_N_Infetado"
                             android:inputType="number" />
 
@@ -84,13 +89,15 @@
                             android:id="@+id/spinnerNI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp" />
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp" />
 
                         <Button
                             android:id="@+id/SubmeterNI"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
                             android:onClick="submeterNI"
                             android:text="@string/Submeter_N_Infetado" />
 
@@ -99,9 +106,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="8dp"
-                            android:layout_marginTop="16dp"
                             android:layout_marginRight="8dp"
-                            android:onClick="cancelarNaoInfetado" />
+                            android:onClick="cancelarNaoInfetado"
+                            android:text="@string/Cancelar_Infetado" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
